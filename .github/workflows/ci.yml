@@ -1,6 +1,6 @@
 name: Check code
 on: [push]
-permission: [read]
+
 jobs:
   Check-code-is:
   runs-on: ubuntu-latest
@@ -10,5 +10,5 @@ jobs:
      with:
        python-version: "3.12"
    - run: pip install -r services/taasks-api/requirements.txt
-   - run: prtest servces/task-api
+   - run: pytest servces/task-api
 

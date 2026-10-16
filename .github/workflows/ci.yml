@@ -13,5 +13,5 @@ jobs:
       with:
         python-version: "3.12"
     - run: pip install -r services/tasks-api/requirements.txt
-    - run: pytest servces/tasks-api
+    - run: pytest services/tasks-api
 

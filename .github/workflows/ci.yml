@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: actions/checkout@v6
       uses: actions/checkout@v6
-      uses: actions/checkout@v7
+      uses: actions/setup-python@v7
       with:
         python-version: ${{matrix.python-ver }}
     - run: pip install -r services/${{matrix.service}}/requirements.txt

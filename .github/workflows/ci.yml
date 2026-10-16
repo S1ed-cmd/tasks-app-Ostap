@@ -6,12 +6,12 @@ on:
 
 jobs:
   run-tests:
-  runs-on: ubuntu-latest
-  steps:
-   - name: actions/checkut@v6
-     uses: actions/checkut@v6
-     with:
-       python-version: "3.12"
-   - run: pip install -r services/tasks-api/requirements.txt
-   - run: pytest servces/tasks-api
+    runs-on: ubuntu-latest
+    steps:
+    - name: actions/checkut@v6
+      uses: actions/checkut@v6
+      with:
+        python-version: "3.12"
+    - run: pip install -r services/tasks-api/requirements.txt
+    - run: pytest servces/tasks-api
 

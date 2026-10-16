@@ -1,0 +1,14 @@
+name: Check code
+on: [push]
+permission: [read]
+jobs:
+  Check-code-is:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Install dependencies
+     uses: actions/checkut@v6
+     with:
+       python-version: "3.12"
+   - run: pip install -r services/taasks-api/requirements.txt
+   - run: prtest servces/task-api
+
